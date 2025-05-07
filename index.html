@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Scout-Lebanon</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/wosm_0-Photoroom-Picsart-AiImageEnhancer.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Glightbox CSS -->
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<!-- Glightbox JS -->
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Bootslander
+  * Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<script>
+  function openNews(img) {
+    document.getElementById('popupImage').src = img.src;
+    document.getElementById('newsText').textContent = img.getAttribute('data-news');
+    document.getElementById('newsPopup').style.display = 'flex';
+  }
+
+  function closeNews() {
+    document.getElementById('newsPopup').style.display = 'none';
+  }
+</script>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="assets/img/wosm_0-Photoroom-Picsart-AiImageEnhancer.png" alt="Lebanon Scout Logo" style="height: 40px; margin-right: 10px;">
+        <h1 class="sitename">Lebanon Scout</h1>
+       
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#gallery">News</a></li>
+          <li><a href="#team">Feedback</a></li>
+          <li><a href="login.php">Login</a></li>
+          <li><a href="JoinUs.php">JoinUs</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <img src="assets/img/hero-bg-2.jpg" alt="" class="hero-bg">
+
+      <div class="container">
+        <div class="row gy-4 justify-content-between">
+          <div class="col-lg-4 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/BP_jagger_complete-Photoroom-Picsart-AiImageEnhancer.png" class="img-fluid animated" alt="">
+          </div>
+
+          <div class="col-lg-6  d-flex flex-column justify-content-center" data-aos="fade-in">
+            <h1>Creating transformative learning experiences for young people <span>everywhere</span></h1>
+            <p>“We must change boys from a ‘what can I get’ to a
+              ‘what can I give’ attitude.”</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Get Started</a>
+              <a href="https://youtu.be/wZeGWcgW7oY?si=mcchMc49RtJXIVHO" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+
+    </section><!-- /Hero Section -->
+
+   <!-- About Section -->
+<section id="about" class="about section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row align-items-xl-center gy-5">
+
+      <div class="col-xl-5 content">
+        <h3>About Us</h3>
+        <h2>Building Youth Leaders Through Adventure & Service</h2>
+        <p>The Lebanese Scout Association (LSA), established in 1935 at the American University of Beirut, is a non-religious, non-sectarian, volunteer-based organization. We are dedicated to educating young people through a value system based on the Scout Promise and Law, aiming to develop responsible citizens who contribute positively to society.</p>
+        <a href="" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+      </div>
+
+      <div class="col-xl-7">
+        <div class="row gy-4 icon-boxes">
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <i class="bi bi-tree"></i>
+              <h3>Outdoor Education</h3>
+              <p>We provide outdoor and non-formal education programs that foster personal growth and environmental stewardship among youth.</p>
+            </div>
+          </div> <!-- End Icon Box -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <i class="bi bi-people"></i>
+              <h3>Community Engagement</h3>
+              <p>Our scouts actively participate in community service, promoting civic responsibility and social cohesion across Lebanon.</p>
+            </div>
+          </div> <!-- End Icon Box -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-box">
+              <i class="bi bi-award"></i>
+              <h3>Leadership Development</h3>
+              <p>Through structured programs, we cultivate leadership skills, empowering youth to take initiative and lead with integrity.</p>
+            </div>
+          </div> <!-- End Icon Box -->
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <i class="bi bi-globe"></i>
+              <h3>Global Citizenship</h3>
+              <p>As a member of the World Organization of the Scout Movement, we encourage global awareness and cross-cultural understanding.</p>
+            </div>
+          </div> <!-- End Icon Box -->
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- /About Section -->
+
+<!-- Features Section -->
+<section id="features" class="features section py-5">
+
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <h2 class="fw-bold">Our Digital Scouting Features</h2>
+      <p class="text-muted">Keeping scouting alive and connected — wherever we are.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Feature Item -->
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-box text-center p-4 h-100">
+          <i class="bi bi-person-badge fs-1 mb-3" style="color: #ffbb2c;"></i>
+          <h5 class="fw-semibold">Scout Accounts</h5>
+          <p class="text-muted small">Each scout has a personal online profile to track progress, activities, and tasks.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-box text-center p-4 h-100">
+          <i class="bi bi-person-check fs-1 mb-3" style="color: #5578ff;"></i>
+          <h5 class="fw-semibold">Leader Dashboards</h5>
+          <p class="text-muted small">Leaders manage troops, assign tasks, and follow up on participation remotely.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-box text-center p-4 h-100">
+          <i class="bi bi-laptop fs-1 mb-3" style="color: #e80368;"></i>
+          <h5 class="fw-semibold">Online Activities</h5>
+          <p class="text-muted small">Interactive and educational activities scouts can complete at home or online.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="feature-box text-center p-4 h-100">
+          <i class="bi bi-calendar-check fs-1 mb-3" style="color: #e361ff;"></i>
+          <h5 class="fw-semibold">Weekly Tasks</h5>
+          <p class="text-muted small">Custom weekly missions for scouts to stay engaged and earn achievements.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="feature-box text-center p-4 h-100">
+          <i class="bi bi-wifi fs-1 mb-3" style="color: #47aeff;"></i>
+          <h5 class="fw-semibold">Remote Ready</h5>
+          <p class="text-muted small">Designed for emergencies — scouts can participate fully during lockdowns or crises.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="feature-box text-center p-4 h-100">
+          <i class="bi bi-chat-left-dots fs-1 mb-3" style="color: #29cc61;"></i>
+          <h5 class="fw-semibold">Communication Tools</h5>
+          <p class="text-muted small">Message boards and updates to keep everyone informed and connected.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="700">
+        <div class="feature-box text-center p-4 h-100">
+          <i class="bi bi-patch-check fs-1 mb-3" style="color: #11dbcf;"></i>
+          <h5 class="fw-semibold">Badge System</h5>
+          <p class="text-muted small">Earn digital badges for completing activities, projects, and challenges.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="800">
+        <div class="feature-box text-center p-4 h-100">
+          <i class="bi bi-cloud-arrow-down fs-1 mb-3" style="color: #4233ff;"></i>
+          <h5 class="fw-semibold">Resource Center</h5>
+          <p class="text-muted small">Download guides, worksheets, and activity packs — anytime, anywhere.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+<!-- Lebanese Scout Federation Stats Section -->
+<section id="stats" class="stats section light-background py-5 text-center">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4 justify-content-center">
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-flag fs-1" style="color: #4e73df;"></i>
+        <div class="stats-item mt-2">
+          <p class="fw-bold">Federation Founded</p>
+          <span>The Lebanese Scout Federation was founded to unite scouts across all affiliations.</span>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-diagram-3 fs-1" style="color: #1cc88a;"></i>
+        <div class="stats-item mt-2">
+          <p class="fw-bold">Member Organizations</p>
+          <span>Includes 41 scouting organizations from diverse religious and political backgrounds.</span>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-people-fill fs-1" style="color: #36b9cc;"></i>
+        <div class="stats-item mt-2">
+          <p class="fw-bold">Scouts in Lebanon</p>
+          <span>Approximately 200,000 scouts active throughout Lebanon.</span>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+        <i class="bi bi-globe2 fs-1" style="color: #f6c23e;"></i>
+        <div class="stats-item mt-2">
+          <p class="fw-bold">Arab Scouts</p>
+          <span>Part of a wider Arab scouting community of over 5 million scouts.</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+<!-- News Section -->
+<section id="gallery" class="gallery section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>News</h2>
+    <div><span>Check Our</span> <span class="description-title">News</span></div>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gallery-2 news-gallery">
+      <div class="col-lg-3 col-md-4">
+        <img src="scout-beach.jpg" alt="News" class="img-fluid" data-news="Scouts cleaned the beach in Beirut." onclick="openNews(this)">
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <img src="leader-ship.jpeg" alt="News" class="img-fluid" data-news="Leadership training in Mount Lebanon." onclick="openNews(this)">
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <img src="tripoli.jpg" alt="News" class="img-fluid" data-news="Environmental awareness session held in Tripoli." onclick="openNews(this)">
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <img src="scout-beach222.png" alt="News" class="img-fluid" data-news="Scout hike and survival training day." onclick="openNews(this)">
+      </div>
+      <!-- Add more images with different data-news as needed -->
+    </div>
+  </div>
+
+  <!-- Popup -->
+  <div id="newsPopup" class="news-popup" onclick="closeNews()">
+    <div class="news-popup-content">
+      <img id="popupImage" src="" alt="">
+      <div class="news-text" id="newsText"></div>
+    </div>
+  </div>
+
+
+    <!-- Feedback Section -->
+<section id="team" class="team section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Feedback</h2>
+    <div><span>Check Our</span> <span class="description-title">Feedback</span></div>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-5">
+
+      <!-- Feedback 1 -->
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+        <div class="member w-100">
+          <div class="pic">
+            <img src="wassim el zeinn.jpg" class="img-fluid" alt="Wassim El Zein">
+          </div>
+          <div class="member-info d-flex flex-column">
+            <h4>Wassim El Zein</h4>
+            <span>President of the Lebanese Scout Federation</span>
+            <p class="flex-grow-1">"This website empowers both leaders and scouts to stay active and connected in any emergency. It brings our values to life even when we're apart."</p>
+          </div>
+        </div>
+      </div><!-- End Feedback 1 -->
+
+      <!-- Feedback 2 -->
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+        <div class="member w-100">
+          <div class="pic">
+            <img src="IMG_6419.PNG" class="img-fluid" alt="Kassem obeid">
+          </div>
+          <div class="member-info d-flex flex-column">
+            <h4>Kassem obeid</h4>
+            <span>Risala Scout Leader</span>
+            <p class="flex-grow-1">"A complete platform for engaging scouts online — it keeps us organized, even when we can't meet in person."</p>
+          </div>
+        </div>
+      </div><!-- End Feedback 2 -->
+
+      <!-- Feedback 3 -->
+      <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+        <div class="member w-100">
+          <div class="pic">
+            <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="Ahmed Mansour">
+          </div>
+          <div class="member-info d-flex flex-column">
+            <h4>Ahmed Mansour</h4>
+            <span>Parent of a Scout</span>
+            <p class="flex-grow-1">"My child can continue to learn and participate even during disruptions. This initiative is a blessing for all families."</p>
+          </div>
+        </div>
+      </div><!-- End Feedback 3 -->
+
+    </div>
+  </div>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <div><span>Reach Out to</span> <span class="description-title">Us</span></div>
+  </div>
+
+  <div class="container" data-aos="fade" data-aos-delay="100">
+    <div class="row gy-4">
+
+      <!-- Contact Information -->
+      <div class="col-lg-4">
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-geo-alt flex-shrink-0"></i>
+          <div>
+            <h3>Address</h3>
+            <p>Beirut, Lebanon</p>
+          </div>
+        </div>
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-telephone flex-shrink-0"></i>
+          <div>
+            <h3>Call Us</h3>
+            <p>+961 1 745 408</p>
+          </div>
+        </div>
+
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-envelope flex-shrink-0"></i>
+          <div>
+            <h3>Email Us</h3>
+            <p>contact@lsa.org.lb</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-8">
+        <form action="https://formsubmit.co/abs.fadel12@gmail.com" method="POST" data-aos="fade-up" data-aos-delay="200">
+          <!-- FormSubmit Configuration -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="thank-you.html">
+
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+
+            <div class="col-md-6">
+              <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+            </div>
+
+            <div class="col-md-12">
+              <textarea name="message" rows="6" class="form-control" placeholder="Message" required></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <button type="submit" class="btn btn-primary">Send Sponsored Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+  
+        <!-- About -->
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Lebanon Scout</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>Beirut, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>01 271 293</span></p>
+            <p><strong>Email:</strong> <span>lebanonscout@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+  
+        <!-- Useful Links -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Services -->
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Scout Programs</h4>
+          <ul>
+            <li><a href="#">Cubs</a></li>
+            <li><a href="#">Juniors</a></li>
+            <li><a href="#">Youth</a></li>
+            <li><a href="#">Community Service</a></li>
+            <li><a href="#">Events</a></li>
+          </ul>
+        </div>
+  
+        <!-- Newsletter -->
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe to stay informed on our latest scout events and updates.</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form">
+              <input type="email" name="email" placeholder="Your Email">
+              <input type="submit" value="Subscribe">
+            </div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Subscription successful. Thank you!</div>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  
+ 
+  </footer>
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
